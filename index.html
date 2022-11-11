@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <div id="main_div">
+            <div id="input_div">
+                <form action="">
+                    <input type="text" id="result" maxlength="9" placeholder="Only Numbers">
+                </form>
+            </div>
+
+            <div id="action_button_div">
+                <button id="act+" onClick="display('+')">+</button>
+                <button id="act-" onClick="display('-')">-</button>
+                <button id="actx" onClick="display('*')">x</button>
+                <button id="act/" onClick="display('/')">/</button>
+                <button style="color: red;" id="actOnC" onClick="clearScreen()">On/C</button>
+            </div>
+
+            <div id="number_button_div">
+
+                <div class="firs_line_number">
+                    <button id="num1" value="1" onClick="display('1')">1</button>
+                    <button id="num2" value="2" onClick="display('2')">2</button>
+                    <button id="num3" value="3" onClick="display('3')">3</button>
+                </div>
+
+                <div class="second_line_number">
+                    <button id="num4" value="4" onClick="display('4')">4</button>
+                    <button id="num5" value="5" onClick="display('5')">5</button>
+                    <button id="num6" value="6" onClick="display('6')">6</button>
+                </div>
+
+                <div class="third_line_number">
+                    <button id="num7" value="7" onClick="display('7')">7</button>
+                    <button id="num8" value="8" onClick="display('8')">8</button>
+                    <button id="num9" value="9" onClick="display('9')">9</button>
+                </div>
+
+                <div class="fourth_line_number">
+                    <button id="num0" onClick="display('0')">0</button>
+                    <button id="num." onClick="display('.')">.</button>
+                    <button id="equal" onClick="solve()">=</button>
+                </div>
+
+            </div>
+            <div id="signature_div">
+                <span>Made by Dawo</span>
+            </div>
+        </div>
+
+        
+        <div id="more_tool_div">
+            <div class="more_first_line">
+                <button><sup>2</sup>√</button>
+                <button><sup>3</sup>√</button>
+            </div>
+            <div class="more_second_line">
+                <button>x<sup>2</sup></button>
+                <button>x<sup>3</sup></button>
+            </div>
+        </div>
+    </main>
+
+    <div id="more_options">
+        <button id="optBut">More tools</button>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
